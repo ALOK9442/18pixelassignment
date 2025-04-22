@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Navbar from "./components/navbar/navbar";
+import leatherWorker from "./assets/worker_working_on_leather.jpg";
+import Quotes from "./components/quotes/quotes";
+import FeaturedPicks from "./components/footer/featuredpicks";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="bg-[#efece7]">
+      <div
+        className="h-screen w-screen bg-cover bg-no-repeat bg-center"
+        style={{
+          backgroundImage: `url(${leatherWorker})`,
+        }}
+      >
+        <Navbar />
+        <div className="absolute bottom-10 left-10 text-white ">
+          <h2
+            className="text-xl md:text-4xl font-medium"
+            style={{
+              fontFamily: "Work Sans, sans-serif",
+              letterSpacing: "16%",
+            }}
+          >
+            WE BELIEVE IN SUSTAINABILITY
+          </h2>
+          <p
+            className="mt-4 text-sm font-normal max-w-xl"
+            style={{
+              letterSpacing: "-2%",
+              fontFamily: "Work Sans, sans-serif",
+              fontWeight: 400,
+              fontSize: "10px",
+              lineHeight: "100%",
+              fontStyle: "normal",
+            }}
+          >
+            Crafted from responsibly sourced leather, our products combine
+            timeless quality with a deep respect for the planet. We’re committed
+            to eco-conscious practices every step of the way.
+          </p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Quotes />
+      <FeaturedPicks />
+    </div>
+  );
 }
 
-export default App
+export default App;
