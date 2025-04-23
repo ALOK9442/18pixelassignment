@@ -8,7 +8,7 @@ import unitednations from "../../assets/united_nations.png";
 
 export default function Quotes() {
   return (
-    <div className="bg-[#f5f2ec] py-16 px-6 lg:px-20">
+    <div className="bg-[#f5f2ec] py-18 px-6 lg:px-20">
       <div className="mx-auto flex gap-16 items-center max-h-[730px]">
         <div className="w-2/3 flex flex-col gap-8 pt-8 px-8">
           <p

@@ -2,10 +2,15 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import leatherWorker from "./assets/worker_working_on_leather.jpg";
 import Quotes from "./components/quotes/quotes";
-import FeaturedPicks from "./components/footer/featuredpicks";
+import FeaturedPicks from "./components/featuredpicks/featuredpicks";
+import CraftmanShipShowcase from "./components/craftmanshipshowcase/craftmanshipshowcase";
+import Footer from "./components/footer/footer";
+import LeatherFamilyCarousel from "./components/leatherfamilycarousel/leatherfamilycaraousel";
+import AllWomenSection from "./components/allwomensection/allwomensection";
+import WomenCategory from "./components/womencategories/womencategories";
+import Blogs from "./components/Blogs/blogs";
 
 function App() {
-
   return (
     <div className="bg-[#efece7]">
       <div
@@ -19,7 +24,7 @@ function App() {
           <h2
             className="text-xl md:text-4xl font-medium"
             style={{
-              fontFamily: "Work Sans, sans-serif",
+              fontFamily: "Centra No2 Medium",
               letterSpacing: "16%",
             }}
           >
@@ -29,7 +34,7 @@ function App() {
             className="mt-4 text-sm font-normal max-w-xl"
             style={{
               letterSpacing: "-2%",
-              fontFamily: "Work Sans, sans-serif",
+              fontFamily: "Centra No2 Light",
               fontWeight: 400,
               fontSize: "10px",
               lineHeight: "100%",
@@ -43,7 +48,13 @@ function App() {
         </div>
       </div>
       <Quotes />
+      <LeatherFamilyCarousel />
       <FeaturedPicks />
+      <WomenCategory />
+      <CraftmanShipShowcase />
+      <AllWomenSection />
+      <Blogs />
+      <Footer />
     </div>
   );
 }

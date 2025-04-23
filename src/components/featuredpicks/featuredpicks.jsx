@@ -1,9 +1,10 @@
 import Featuredpick1 from "../../assets/person_with_bag.jpg";
 import Featuredpick2 from "../../assets/lady_with_bag.jpg";
+import Button from "../button/button";
 
 export default function FeaturedPicks() {
   return (
-    <div className="flex overflow-hidden">
+    <div className="flex overflow-hidden py-14">
       <div className="w-1/2 h-full relative">
         <img
           src={Featuredpick1}
@@ -21,17 +22,18 @@ export default function FeaturedPicks() {
           >
             Trending Backpacks
           </h2>
-          <p className="max-w-xs text-xs mt-2">
+          <p
+            className="max-w-xs text-xs mt-2"
+            style={{
+              fontFamily: "Centra No2 Light",
+            }}
+          >
             Lorem ipsum dolor sit amet consectetur. Etiam magna viverra
             ultricies pellentesque diam vestibulum neque faucibus. Suspendisse
             consequat tincidunt amet condimentum sed leo sollicitudin vitae eu.
             Rutrum neque morbi eu ullamcorper lorem.
           </p>
-          <button className="group relative mt-4 flex items-center gap-2 text-white text-sm font-medium">
-            Discover More
-            <span className="block w-6 h-px bg-white transition-all duration-500 group-hover:w-0 origin-right"></span>
-            <span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-500 group-hover:w-full"></span>
-          </button>
+          <Button text={"Discover More"} className="text-white" />
         </div>
       </div>
       <div className="w-1/2 h-full relative">
@@ -52,17 +54,18 @@ export default function FeaturedPicks() {
           >
             Handbags
           </h2>
-          <p className="max-w-xs text-xs mt-2">
+          <p
+            className="max-w-xs text-xs mt-2"
+            style={{
+              fontFamily: "Centra No2 Light",
+            }}
+          >
             Lorem ipsum dolor sit amet consectetur. Etiam magna viverra
             ultricies pellentesque diam vestibulum neque faucibus. Suspendisse
             consequat tincidunt amet condimentum sed leo sollicitudin vitae eu.
             Rutrum neque morbi eu ullamcorper lorem.
           </p>
-          <button className="group relative mt-4 flex items-center gap-2 text-white text-sm font-medium">
-            Discover More
-            <span className="block w-6 h-px bg-white transition-all duration-500 group-hover:w-0 origin-right"></span>
-            <span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-500 group-hover:w-full"></span>
-          </button>
+          <Button text={"Discover More"} className="text-white" />
         </div>
       </div>
     </div>

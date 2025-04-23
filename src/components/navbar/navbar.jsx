@@ -25,6 +25,7 @@ export default function Navbar() {
             className="text-sm font-normal"
             style={{
               letterSpacing: "14%",
+              fontFamily: "Centra No2 Light",
             }}
           >
             {item}
@@ -41,7 +42,7 @@ export default function Navbar() {
         />
         <p
           style={{
-            fontFamily: "Work Sans, sans-serif",
+            fontFamily: "Centra No2 Light",
             letterSpacing: "16%",
             fontStyle: "normal",
             fontSize: "10px",
@@ -55,6 +56,7 @@ export default function Navbar() {
           className="text-sm font-normal"
           style={{
             letterSpacing: "14%",
+            fontFamily: "Centra No2 Light",
           }}
         >
           ABOUT US
@@ -63,6 +65,7 @@ export default function Navbar() {
           className="text-sm font-normal"
           style={{
             letterSpacing: "14%",
+            fontFamily: "Centra No2 Light",
           }}
         >
           IN/₹
